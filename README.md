@@ -47,6 +47,8 @@ vault-diff --source secret/prod/app --target secret/staging/app --recursive
 | `--format` | Output format: `text` (default), `json`, `yaml` |
 | `--recursive` | Recursively compare all sub-paths |
 | `--redact` | Mask secret values in output |
+| `--namespace` | Vault namespace (Enterprise only) |
+| `--timeout` | Request timeout in seconds (default: 30) |
 
 ### Environment Variables
 
@@ -54,6 +56,7 @@ vault-diff --source secret/prod/app --target secret/staging/app --recursive
 |----------|-------------|
 | `VAULT_ADDR` | Vault server address |
 | `VAULT_TOKEN` | Vault authentication token |
+| `VAULT_NAMESPACE` | Vault namespace (Enterprise only) |
 
 ---
 
